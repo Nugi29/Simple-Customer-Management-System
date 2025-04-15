@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer Management > Delete</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Show All</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+              aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="addCustomer.html">Add</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="searchCustomer.html">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="updateCustomer.html">Update</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="deleteCustomer.html">Delete</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <h1 class="bg-info text-white p-2 text-center">Delete Customer</h1>
+    <br>
+    <form>
+        <div class="container">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search By Id" aria-label="Search By Id"
+                    aria-describedby="button-addon" id="txtSearchId">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon" onclick="searchCustomer()">Delete</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="customerDetails" class="container">
+        <div class="row mb-3">
+            <label for="txtId" class="col-sm-2 col-form-label">ID</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="txtId" disabled>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="txtName" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="txtName" disabled>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="txtAddress" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="txtAddress" disabled>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="txtSalary" class="col-sm-2 col-form-label">Salary</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="txtSalary" disabled>
+            </div>
+        </div>
+
+        <button type="button" id="btnDeleteCustomer" class="btn btn-danger align-items-lg-center " onclick="deleteCustomer()">Delete Customer</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script src="searchCustomer.js"></script>
+    <script src="deleteCustomer.js"></script>
+
+
+</body>
+
+</html>
